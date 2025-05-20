@@ -41,7 +41,7 @@ function Navbar() {
     <>
     
         {/*  Header */}
-    <header className="lg:flex lg:flex-row lg:justify-around lg:items-center lg:p-9 lg:bg-[#FFF5EB] lg:shadow-sm max-h-[100px] md:flex md:flex-row md:justify-between md:items-center md:p-9 md:bg-[#FFF5EB] md:shadow-sm flex flex-row justify-between items-center p-9 bg-[#FFF5EB] shadow-sm">
+    <header className="lg:flex lg:flex-row lg:justify-around lg:items-center lg:p-9 lg:bg-[#FFF5EB] lg:shadow-sm max-h-[100px] md:flex md:flex-row md:justify-between md:items-center md:p-9 md:bg-[#FFF5EB] md:shadow-sm flex flex-row justify-between items-center p-9 bg-[#FFF5EB] shadow-sm fixed top-0 left-0 w-full z-100">
 
         {/* Logo */}
         <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-2 lg:p-9 lg:border-r-2 lg:border-[#FFD2A4] lg:max-h-[100px] md:flex md:flex-row md:justify-center md:items-center md:gap-2 md:p-9 md:border-r-2 md:border-[#FFD2A4] md:max-h-[100px] flex flex-row justify-center items-center gap-2 p-2 border-r-2 border-[#FFD2A4] max-h-[100px]">
@@ -74,7 +74,7 @@ function Navbar() {
 
     {/* Mobile Navigation */}
     {isOpen && (
-        <section className="lg:hidden flex flex-col justify-center items-center gap-5 w-[60%] min-h-full bg-[#FFF5EB] shadow-lg px-9 absolute top-0 right-0 z-10 mobileMenu">
+        <section className="lg:hidden flex flex-col justify-center items-center gap-5 w-[60%] min-h-full bg-[#FFF5EB] shadow-lg px-9 top-0 right-0 z-101 mobileMenu fixed ">
             {/* Close Button */}
             <IoMdCloseCircle className="text-5xl cursor-pointer relative top-[-100px] ml-auto" onClick={() => setIsOpen(false)} />
             
