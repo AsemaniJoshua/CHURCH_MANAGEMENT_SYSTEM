@@ -20,7 +20,7 @@
             }
         ],
         "location": "123 Main St, Springfield, USA",
-        "Image": "/src/assets/images/Angels.png",
+        "image": "/src/assets/images/Angels.png",
         "speakers": [
             {
                 "name": "John Doe",
@@ -30,7 +30,7 @@
             {
                 "name": "Jane Smith",
                 "bio": "Youth Pastor at Springfield Church",
-                "image": "/assets/images/Angels.png"
+                "image": "/src/assets/images/Angels.png"
             }
         ]
     }
