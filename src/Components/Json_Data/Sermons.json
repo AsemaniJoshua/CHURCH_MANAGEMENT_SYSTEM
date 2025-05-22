@@ -30,7 +30,7 @@
             {
                 "name": "Jane Smith",
                 "bio": "Youth Pastor at Springfield Church",
-                "image": "/src/assets/images/JaneSmith.png"
+                "image": "../../assets/images/Angels.png"
             }
         ]
     }
