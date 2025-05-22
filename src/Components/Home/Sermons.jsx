@@ -65,7 +65,7 @@ function ChurchSermons() {
 
 
                     {/* Sermon Image */}
-                    <img src={sermon.Image} alt="Sermon Image" srcset="" className="lg:order-2 md:order-1 order-1 lg:w-[60%] md:w-[100%] w-[100%]" />
+                    <img src={sermon.image} alt="Sermon Image" srcset="" className="lg:order-2 md:order-1 order-1 lg:w-[60%] md:w-[100%] w-[100%]" />
                 </div>
             ))}
 
