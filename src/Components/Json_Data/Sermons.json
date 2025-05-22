@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "date": {
+            "day": 20,
+            "month": "JULY",
+            "year": 2023
+        },
+        "category": "UPCOMING EVENT",
+        "title": "The Power of Faith in Our Lives",
+        "description": "The sermon will focus on the importance of faith in our daily lives.",
+        "days_and_time_of_event": [
+            {
+                "day": "Monday",
+                "time": "10:00 AM - 11:00 AM"
+            },
+            {
+                "day": "Wednesday",
+                "time": "10:00 AM - 11:00 AM"
+            }
+        ],
+        "location": "123 Main St, Springfield, USA",
+        "Image": "/src/assets/images/Angels.png",
+        "speakers": [
+            {
+                "name": "John Doe",
+                "bio": "Senior Pastor at Springfield Church",
+                "image": "/src/assets/images/JohnDoe.png"
+            },
+            {
+                "name": "Jane Smith",
+                "bio": "Youth Pastor at Springfield Church",
+                "image": "/assets/images/Angels.png"
+            }
+        ]
+    }
+]
