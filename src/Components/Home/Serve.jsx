@@ -1,4 +1,4 @@
-import Background from "../../assets/Images/Background.png";
+import Background from "../../assets/images/Background.png";
 import { FaQuoteLeft } from "react-icons/fa";
 
 
