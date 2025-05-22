@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "category": "RELATIONSHIP",
+        "title": "Building Strong Relationships",
+        "description": "Explore the foundations of healthy relationships and how to nurture them.",
+        "author": "John Doe",
+        "date_and_day": {
+            "day": "Tuesday",
+            "date": "13th May, 2025"
+        }
+    },
+    {
+        "id": 2,
+        "category": "FAITH",
+        "title": "The Power of Faith",
+        "description": "Discover the transformative power of faith in our lives.",
+        "author": "Jane Smith",
+        "date_and_day": {
+            "day": "Thursday",
+            "date": "20th May, 2025"
+        }
+    },
+    {
+        "id": 3,
+        "category": "COMMUNITY",
+        "title": "Serving Our Community",
+        "description": "Learn about the importance of community service and how to get involved.",
+        "author": "Emily Johnson",
+        "date_and_day": {
+            "day": "Saturday",
+            "date": "27th May, 2025"
+        }
+    },
+    {
+        "id": 4,
+        "category": "SPIRITUALITY",
+        "title": "Deepening Your Spiritual Life",
+        "description": "Explore ways to deepen your spiritual life and connection with God.",
+        "author": "Michael Brown",
+        "date_and_day": {
+            "day": "Monday",
+            "date": "3rd June, 2025"
+        }
+    }
+]

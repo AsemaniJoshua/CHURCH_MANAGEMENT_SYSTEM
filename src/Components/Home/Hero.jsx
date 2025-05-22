@@ -1,4 +1,5 @@
 import HeroImage from '../../assets/images/hero.png';
+import { Typewriter } from 'react-simple-typewriter';
 
 function Hero() {
   return (
