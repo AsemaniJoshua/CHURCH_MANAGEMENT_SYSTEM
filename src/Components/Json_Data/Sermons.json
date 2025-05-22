@@ -20,17 +20,17 @@
             }
         ],
         "location": "123 Main St, Springfield, USA",
-        "image": "/src/assets/images/Angel.png",
+        "image": "/assets/images/Angel.png",
         "speakers": [
             {
                 "name": "John Doe",
                 "bio": "Senior Pastor at Springfield Church",
-                "image": "/src/assets/images/JohnDoe.png"
+                "image": "/assets/images/JohnDoe.png"
             },
             {
                 "name": "Jane Smith",
                 "bio": "Youth Pastor at Springfield Church",
-                "image": "/src/assets/images/Angels.png"
+                "image": "/assets/images/Angels.png"
             }
         ]
     }
