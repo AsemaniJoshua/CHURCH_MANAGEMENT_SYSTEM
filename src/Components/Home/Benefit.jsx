@@ -1,7 +1,7 @@
-import RomanSister from "../../../public/assets/images/RomanSister.png";
-import Bible from "../../../public/assets/images/bible.png";
-import Pastor from "../../../public/assets/images/Pastor.png";
-import Arts from "../../../public/assets/images/Arts.png";
+import RomanSister from "/assets/images/RomanSister.png";
+import Bible from "/assets/images/bible.png";
+import Pastor from "/assets/images/Pastor.png";
+import Arts from "/assets/images/Arts.png";
 import { useEffect } from "react";
 
 
