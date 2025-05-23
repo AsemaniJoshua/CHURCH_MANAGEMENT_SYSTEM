@@ -44,7 +44,7 @@ function Navbar() {
     <header className="lg:flex lg:flex-row lg:justify-around lg:items-center lg:p-9 lg:bg-[#FFF5EB] lg:shadow-sm max-h-[100px] md:flex md:flex-row md:justify-between md:items-center md:p-9 md:bg-[#FFF5EB] md:shadow-sm flex flex-row justify-between items-center p-9 bg-[#FFF5EB] shadow-sm fixed top-0 left-0 w-full z-100">
 
         {/* Logo */}
-        <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-2 lg:p-9 lg:border-r-2 lg:border-[#FFD2A4] lg:max-h-[100px] md:flex md:flex-row md:justify-center md:items-center md:gap-2 md:p-9 md:border-r-2 md:border-[#FFD2A4] md:max-h-[100px] flex flex-row justify-center items-center gap-2 p-2 border-r-2 border-[#FFD2A4] max-h-[100px]">
+        <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-2 lg:p-9 lg:border-r-2 lg:border-[#FFD2A4] lg:max-h-[100px] md:flex md:flex-row md:justify-between md:items-center md:gap-2 md:p-9 md:border-r-2 md:border-[#FFD2A4] md:max-h-[100px] flex flex-row justify-between items-center gap-2 p-2 border-r-2 border-[#FFD2A4] max-h-[100px] max-w-[100%]">
             <LuChurch className="lg:text-7xl md:text-7xl text-5xl text-[#FFD2A4]" />
             <h1 className="lg:text-5xl md:text-5xl text-4xl font-bold text-[#161722] lg:mt-2.5 md:mt-2 mt-1.5">CHAPEL</h1>
         </div>
