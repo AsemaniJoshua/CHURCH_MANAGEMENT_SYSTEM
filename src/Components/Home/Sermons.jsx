@@ -5,7 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 function ChurchSermons() {
     return (
-        <section className="my-[40px] flex flex-col items-center justify-center p-[50px] gap-[20px]">
+        <section className="my-[40px] flex flex-col items-center justify-center p-[50px] gap-[20px] w-full min-w-full max-w-full">
 
             <h3 className="font-medium font-mono">SERMONS</h3>
 

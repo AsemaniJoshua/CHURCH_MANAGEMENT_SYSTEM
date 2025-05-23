@@ -7,7 +7,7 @@ import { LuChurch } from "react-icons/lu";
 
 function Footer() {
   return (
-    <footer className="bg-[#161722] text-white lg:p-[90px] py-[90px] px-[40px] mt-[40px] lg:flex lg:flex-row md:flex md:flex-col flex flex-col gap-[60px] lg:gap-[100px]">
+    <footer className="bg-[#161722] text-white lg:p-[90px] py-[90px] px-[40px] mt-[40px] lg:flex lg:flex-row md:flex md:flex-col flex flex-col gap-[60px] lg:gap-[100px] w-full min-w-full max-w-full">
 
         {/* Footer Division 1 */}
         <div className="flex flex-col gap-[20px] lg:order-1 md:order-1 order-1">

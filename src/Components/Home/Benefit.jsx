@@ -9,7 +9,7 @@ function Benefit() {
   
 
   return (
-    <section className="my-[30px] p-[90px] bg-[#F5F5F5] flex flex-col gap-5 items-center justify-center">
+    <section className="my-[30px] p-[90px] bg-[#F5F5F5] flex flex-col gap-5 items-center justify-center w-full min-w-full max-w-full">
 
 
         <h3 className="font-medium font-mono">WATCH AND LISTEN</h3>
@@ -17,7 +17,7 @@ function Benefit() {
         <h2 className="font-bold text-4xl text-center lg:w-[35%] md:w-[50%] w-[100%]">THE BENEFITS OF JOINING OUR CHURCH</h2>
 
         {/* Cards */}
-        <div className="lg:flex lg:flex-row md:flex md:flex-row flex-wrap gap-[30px] items-center justify-center flex flex-col mt-[30px]">
+        <div className="flex flex-col lg:flex-row gap-[30px] items-center justify-center mt-[30px]">
 
           {/* card 1 */}
           <div className="w-[300px] relative hover:opacity-90 transition-all duration-300 hover:scale-[1.1] hover:shadow-lg hover:bg-black group" id="card1">

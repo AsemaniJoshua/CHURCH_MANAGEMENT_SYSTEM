@@ -41,12 +41,12 @@ function Navbar() {
     <>
     
         {/*  Header */}
-    <header className="lg:flex lg:flex-row lg:justify-around lg:items-center lg:p-9 lg:bg-[#FFF5EB] lg:shadow-sm max-h-[100px] md:flex md:flex-row md:justify-between md:items-center md:p-9 md:bg-[#FFF5EB] md:shadow-sm flex flex-row justify-between items-center p-9 bg-[#FFF5EB] shadow-sm fixed top-0 left-0 z-100 max-w-[100%]">
+    <header className="flex flex-row justify-between items-center p-2 bg-[#FFF5EB] shadow-sm fixed top-0 left-0 z-50 w-full">
 
         {/* Logo */}
         <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-2 lg:p-9 lg:border-r-2 lg:border-[#FFD2A4] lg:max-h-[100px] md:flex md:flex-row md:justify-center md:items-center md:gap-2 md:p-9 md:border-r-2 md:border-[#FFD2A4] md:max-h-[100px] flex flex-row justify-center items-center gap-2 p-2 border-r-2 border-[#FFD2A4] max-h-[100px]">
-            <LuChurch className="lg:text-7xl md:text-7xl text-4xl text-[#FFD2A4]" />
-            <h1 className="lg:text-5xl md:text-5xl text-4xl font-bold text-[#161722] lg:mt-2.5 md:mt-2 mt-1.5">CHAPEL</h1>
+            <LuChurch className="lg:text-7xl md:text-7xl text-3xl text-[#FFD2A4]" />
+            <h1 className="lg:text-5xl md:text-5xl text-3xl font-bold text-[#161722] lg:mt-2.5 md:mt-2 mt-1.5">CHAPEL</h1>
         </div>
 
 
@@ -67,14 +67,14 @@ function Navbar() {
         </div>
 
         {/* Hamburger Menu */}
-        <BiSolidFoodMenu className="text-6xl cursor-pointer lg:hidden hamburger-menu" onClick={() => setIsOpen(true)} />        
+        <BiSolidFoodMenu className="text-4xl cursor-pointer lg:hidden hamburger-menu" onClick={() => setIsOpen(true)} />        
 
     </header>
 
 
     {/* Mobile Navigation */}
     {isOpen && (
-        <section className="lg:hidden flex flex-col justify-center items-center gap-5 w-[60%] min-h-full bg-[#FFF5EB] shadow-lg px-9 top-0 right-0 z-101 mobileMenu fixed ">
+        <section className="lg:hidden flex flex-col justify-center items-center gap-5 w-full max-w-xs min-h-full bg-[#FFF5EB] shadow-lg px-6 top-0 right-0 z-50 mobileMenu fixed">
             {/* Close Button */}
             <IoMdCloseCircle className="text-5xl cursor-pointer relative top-[-100px] ml-auto" onClick={() => setIsOpen(false)} />
             

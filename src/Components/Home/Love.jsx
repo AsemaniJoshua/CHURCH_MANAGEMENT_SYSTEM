@@ -6,7 +6,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 
 function Love() {
   return (
-    <section className='my-[40px] p-[70px]'>
+    <section className="my-[40px] p-4 md:p-8 lg:p-[70px] w-full">
 
         {/* text div */}
         <div className='flex flex-col gap-[15px] p-[10px] justify-center items-center'>
@@ -26,7 +26,7 @@ function Love() {
 
             <img src={Praying_Man} alt="A man praying" srcset=" A man praying" />
 
-            <img src={Couples} alt=" A couple reading a book" srcset=" A couple reading a book" className='lg:mt-[255px] lg:scale-[1] md:scale-[1] scale-[1.15] md:my-0 lg:my-0 my-[20px]' />
+            <img src={Couples} alt=" A couple reading a book" srcset=" A couple reading a book" className='lg:mt-[255px] lg:scale-[1] md:scale-[1] scale-[1.05] md:my-0 lg:my-0 my-[20px]' />
 
             <img src={Gathering} alt="A gathering of people" srcset=" A gathering of people" />
 
