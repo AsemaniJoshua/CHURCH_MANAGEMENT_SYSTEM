@@ -1,6 +1,6 @@
-import Praying_Man from '../../../public/assets/images/a-bearded-man-praying-5206040.png'
-import Couples from '../../../public/assets/images/man-and-woman-reading-book-while-sitting-on-pews-8468470.png'
-import Gathering from '../../../public/assets/images/people-sitting-on-brown-pews-8674151.png'
+import Praying_Man from '/assets/images/a-bearded-man-praying-5206040.png'
+import Couples from '/assets/images/man-and-woman-reading-book-while-sitting-on-pews-8468470.png'
+import Gathering from '/assets/images/people-sitting-on-brown-pews-8674151.png'
 import { MdArrowRightAlt } from "react-icons/md";
 
 
