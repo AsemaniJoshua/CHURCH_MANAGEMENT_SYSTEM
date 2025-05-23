@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section
       style={{ backgroundImage: `url(${HeroImage})` }}
-      className="bg-cover bg-center flex flex-row lg:justify-start lg:items-start md:justify-start md:items-start text-white h-[535px] mt-[100px] justify-start items-start w-full min-w-full max-w-full"
+      className="bg-cover bg-center flex flex-row lg:justify-start lg:items-start md:justify-start md:items-start text-white h-[535px] mt-[100px] justify-start items-start"
     >
       {/* Hero Text */}
       <div className="flex flex-col lg:p-[90px] md:p-[70px] p-[50px] pl-[30px] text-left lg:gap-[20px] md:gap-[30px] gap-[10px] lg:mt-[30px] md:mt-[30px] mt-[10px] lg:w-[60%] md:w-[85%] w-[120%]">

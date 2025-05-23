@@ -3,7 +3,7 @@ import BlogCard from "../Json_Data/Blog.json";
 
 function Blog() {
   return (
-    <section className="p-[70px] my-[40px] flex flex-col gap-[20px] items-center justify-center w-full min-w-full max-w-full">
+    <section className="p-[70px] my-[40px] flex flex-col gap-[20px] items-center justify-center">
 
         <h3 className="font-medium font-mono">READ OUR BLOG</h3>
 
