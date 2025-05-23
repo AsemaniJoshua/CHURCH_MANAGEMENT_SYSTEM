@@ -11,7 +11,7 @@ function Relevant() {
         <h2 className="font-bold text-4xl text-center">A CHURCH THAT'S RELEVANT</h2>
 
         {/* RelevantCards */}
-        <div className="lg:flex lg:flex-row md:flex md:flex-row md:flex-wrap flex flex-col lg:gap-[20px] md:gap-[20px] gap-[40px] items-center justify-center mt-[30px] p-[20px]">
+        <div className="lg:flex lg:flex-row md:flex md:flex-row md:flex-wrap flex flex-col lg:gap-[20px] md:gap-[20px] gap-[40px] items-center justify-center mt-[30px] p-[20px] max-w-[100%]">
 
             {/* Card 1 */}
             <div className="flex flex-col items-start justify-start gap-[15px] p-[70px] bg-[#FFF5EB] shadow-md hover:shadow-lg transition-shadow duration-300 border-b-[12px] border-[#FFD2A4]">
