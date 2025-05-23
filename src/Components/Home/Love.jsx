@@ -6,7 +6,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 
 function Love() {
   return (
-    <section className='my-[40px] p-[70px]'>
+    <section className='my-[40px] p-[70px] w-full min-w-full max-w-full'>
 
         {/* text div */}
         <div className='flex flex-col gap-[15px] p-[10px] justify-center items-center'>

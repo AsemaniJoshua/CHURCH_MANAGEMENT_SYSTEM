@@ -9,7 +9,7 @@ function Benefit() {
   
 
   return (
-    <section className="my-[30px] p-[90px] bg-[#F5F5F5] flex flex-col gap-5 items-center justify-center">
+    <section className="my-[30px] p-[90px] bg-[#F5F5F5] flex flex-col gap-5 items-center justify-center w-full min-w-full max-w-full">
 
 
         <h3 className="font-medium font-mono">WATCH AND LISTEN</h3>
