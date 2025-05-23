@@ -17,7 +17,9 @@ function Love() {
 
             <p className='text-sm lg:w-[50%] text-center my-[15px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor rerum et vero optio fugiat nisi, aperiam nesciunt modi dicta, tempore delectus cum reprehenderit ullam nam voluptatem temporibus deserunt asperiores.</p>
 
+            <a href="/about" className='no-underline'>
             <button className='bg-[#FFD2A4] text-black font-medium py-2 px-4 rounded-md cursor-pointer hover:cursor-pointer hover:text-2xl'>Read More</button>
+            </a>
 
         </div>
 
@@ -41,7 +43,7 @@ function Love() {
 
             <p className='text-[13px] text-[#333] lg:w-[50%] text-center w-[100%]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis dignissimos recusandae voluptate nisi ad suscipit fuga, corrupti, reiciendis modi cum deleniti, sint atque nam cupiditate facere pariatur voluptatibus. Aliquam.</p>
 
-            <a href="http://" className='no-underline cursor-pointer hover:text-2xl'>Read More <MdArrowRightAlt className='inline-block text-2xl'/></a>
+            <a href="/about" className='no-underline cursor-pointer hover:text-2xl'>Read More <MdArrowRightAlt className='inline-block text-2xl'/></a>
         </div>
 
     </section>

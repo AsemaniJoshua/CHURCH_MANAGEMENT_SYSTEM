@@ -17,7 +17,7 @@ function Serve() {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
             excepturi hic, repellat corrupti voluptatem omnis.
           </p>
-          <a href="http://" className="no-underline">
+          <a href="/about" className="no-underline">
             <button className="bg-[#FFD2A4] text-black font-medium py-3 px-9 rounded-md cursor-pointer hover:text-2xl transition-all">
               VISIT
             </button>

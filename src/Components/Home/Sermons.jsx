@@ -60,7 +60,9 @@ function ChurchSermons() {
                         </div>
 
                         {/* Sermon Button */}
-                        <button className="bg-[#161722] text-[#FFD2A4] px-[20px] py-[10px] rounded-[5px] text-center ml-auto mr-auto hover:text-2xl">REGISTER</button>
+                        <a href="/sermons" className="no-underline">
+                            <button className="bg-[#161722] text-[#FFD2A4] px-[20px] py-[10px] rounded-[5px] text-center ml-auto mr-auto hover:text-2xl">REGISTER</button>
+                        </a>
                     </div>
 
 
@@ -70,7 +72,7 @@ function ChurchSermons() {
             ))}
 
             {/* Add a button to view all sermons */}
-            <a href="" className="no-underline lg:ml-auto md:ml-auto flex flex-row items-center justify-center gap-[5px] mt-[20px]"><button className="bg-[#161722] text-[#FFD2A4] px-[20px] py-[10px] rounded-[5px] text-center w-[200px] flex flex-row items-center justify-center gap-[5px]">View All Sermons <IoIosArrowRoundForward className="text-3xl" /></button></a>
+            <a href="/sermons" className="no-underline lg:ml-auto md:ml-auto flex flex-row items-center justify-center gap-[5px] mt-[20px]"><button className="bg-[#161722] text-[#FFD2A4] px-[20px] py-[10px] rounded-[5px] text-center w-[200px] flex flex-row items-center justify-center gap-[5px]">View All Sermons <IoIosArrowRoundForward className="text-3xl" /></button></a>
             
         </section>
     );

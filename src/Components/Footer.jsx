@@ -12,10 +12,12 @@ function Footer() {
         {/* Footer Division 1 */}
         <div className="flex flex-col gap-[20px] lg:order-1 md:order-1 order-1">
 
-            <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-2 lg:p-9 lg:max-h-[100px] relative lg:left-[-30px] md:left-[-30px] left-[-10px] md:flex md:flex-row md:gap-2 md:p-9 md:max-h-[100px] flex flex-row gap-2 p-2 max-h-[100px]">
+            <a href="/" className="no-underline">
+                <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-2 lg:p-9 lg:max-h-[100px] relative lg:left-[-30px] md:left-[-30px] left-[-10px] md:flex md:flex-row md:gap-2 md:p-9 md:max-h-[100px] flex flex-row gap-2 p-2 max-h-[100px]">
                         <LuChurch className="lg:text-7xl md:text-7xl text-5xl text-[#FFD2A4]" />
                         <h1 className="lg:text-5xl md:text-5xl text-4xl font-bold text-[#FFD0A0] lg:mt-2.5 md:mt-2 mt-1.5">CHAPEL</h1>
                     </div>
+            </a>
 
             <p className="text-[#adababe8]">&copy; COPYRIGHT 2025</p>
 

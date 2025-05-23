@@ -44,10 +44,12 @@ function Navbar() {
     <header className="flex flex-row justify-between items-center p-2 bg-[#FFF5EB] shadow-sm fixed top-0 left-0 z-50 w-full">
 
         {/* Logo */}
-        <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-2 lg:p-9 lg:border-r-2 lg:border-[#FFD2A4] lg:max-h-[100px] md:flex md:flex-row md:justify-center md:items-center md:gap-2 md:p-9 md:border-r-2 md:border-[#FFD2A4] md:max-h-[100px] flex flex-row justify-center items-center gap-2 p-2 border-r-2 border-[#FFD2A4] max-h-[100px]">
+        <a href="/" className="no-underline">
+            <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-2 lg:p-9 lg:border-r-2 lg:border-[#FFD2A4] lg:max-h-[100px] md:flex md:flex-row md:justify-center md:items-center md:gap-2 md:p-9 md:border-r-2 md:border-[#FFD2A4] md:max-h-[100px] flex flex-row justify-center items-center gap-2 p-2 border-r-2 border-[#FFD2A4] max-h-[100px]">
             <LuChurch className="lg:text-7xl md:text-7xl text-3xl text-[#FFD2A4]" />
             <h1 className="lg:text-5xl md:text-5xl text-3xl font-bold text-[#161722] lg:mt-2.5 md:mt-2 mt-1.5">CHAPEL</h1>
         </div>
+        </a>
 
 
         {/* Navigation */}
@@ -62,8 +64,11 @@ function Navbar() {
 
         {/* Login / Sign Up */}
         <div className="lg:flex lg:flex-row lg:gap-2 hidden">
-            <button className="bg-[#161722] border-2 border-[#161722] text-[#FFF5EB] font-medium py-4 rounded-2xl px-9 cursor-pointer hover:bg-[#FFF5EB] hover:text-[#161722] transition-colors ease-in duration-200 delay-75">Login</button>
+            <a href="/login" className="no-underline">
+            <button className="bg-[#161722] border-2 border-[#161722] text-[#FFF5EB] font-medium py-4 rounded-2xl px-9 cursor-pointer hover:bg-[#FFF5EB] hover:text-[#161722] transition-colors ease-in duration-200 delay-75">Login</button></a>
+            <a href="/signup" className="no-underline">
             <button className="text-[#161722] font-medium cursor-pointer hover:text-[#FFF5EB] hover:bg-[#161722] py-4 px-9 rounded-2xl transition-colors ease-in hover:ml-2 duration-200">Sign Up</button>
+            </a>
         </div>
 
         {/* Hamburger Menu */}
@@ -88,8 +93,12 @@ function Navbar() {
 
             {/* Login / Sign Up */}
             <div className="flex flex-col gap-5 relative top-[-65px]">
+                <a href="/login" className="no-underline">
                 <button className="bg-[#161722] border-2 border-[#161722] text-[#FFF5EB] font-medium py-4 rounded-2xl px-9 cursor-pointer hover:bg-[#FFF5EB] hover:text-[#161722] transition-colors ease-in duration-200 delay-75 block">Login</button>
+                </a>
+                <a href="/signup" className="no-underline">
                 <button className="text-[#161722] font-medium cursor-pointer hover:text-[#FFF5EB] hover:bg-[#161722] py-4 px-9 rounded-2xl transition-colors ease-in hover:ml-2 duration-200 block">Sign Up</button>
+                </a>
             </div>
 
         </section>
