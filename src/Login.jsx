@@ -1,12 +1,17 @@
 import Navbar from "./Components/Navbar"
+import LoginForm from "./Components/Login/loginForm"
 
 
-function login(){
+
+function Login(){
 
     return (
         <>
             <Navbar />
+            <LoginForm />
 
         </>
     );
 }
+
+export default Login;
