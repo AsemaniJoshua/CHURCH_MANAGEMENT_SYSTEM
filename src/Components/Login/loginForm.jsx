@@ -27,7 +27,7 @@ function LoginForm() {
           <TextInput
             id="email2"
             type="email"
-            placeholder="name@flowbite.com"
+            placeholder="joshua@gmail.com"
             color="#161722"
             required
             shadow
@@ -53,21 +53,21 @@ function LoginForm() {
           />
         </div>
         <div className="flex items-center gap-2">
-          <Checkbox
+          {/* <Checkbox
             id="agree"
             required
             color="#161722"
             className="text-[#161722]"
             checked={isChecked}
             onChange={(e) => setIsChecked(e.target.checked)}
-          />
+          /> */}
           <Label htmlFor="agree" className="flex text-[#161722]" color="#161722">
-            I agree with the&nbsp;
+            {/* I agree with the&nbsp; */} Forget Password?&nbsp;
             <a
               href="/"
-              className="text-[#161722] hover:underline font-medium"
+              className="text-[#161722] underline font-medium"
             >
-              terms and conditions
+              Reset Password
             </a>
           </Label>
         </div>

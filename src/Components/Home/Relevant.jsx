@@ -8,7 +8,7 @@ function Relevant() {
 
         <h3 className="font-medium font-mono">Relevant</h3>
 
-        <h2 className="font-bold text-4xl text-center">A CHURCH THAT'S RELEVANT</h2>
+        <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl text-center">A CHURCH THAT'S RELEVANT</h2>
 
         {/* RelevantCards */}
         <div className="flex flex-col lg:flex-row gap-[20px] items-center justify-center mt-[30px] p-[20px]">

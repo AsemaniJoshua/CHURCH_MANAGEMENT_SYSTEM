@@ -9,7 +9,7 @@ function ChurchSermons() {
 
             <h3 className="font-medium font-mono">SERMONS</h3>
 
-            <h2 className="font-bold text-4xl text-center lg:w-[40%]">JOIN US AND BECOME PART OF SOMETHING GREAT</h2>
+            <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl text-center lg:w-[40%]">JOIN US AND BECOME PART OF SOMETHING GREAT</h2>
 
             {/* Available sermons from the json file */}
                 {Sermons.map((sermon) => (
@@ -30,7 +30,7 @@ function ChurchSermons() {
                         </div>
 
                         {/* Sermon Title */}
-                        <h2 className="text-4xl font-bold">{sermon.title}</h2>
+                        <h2 className="lg:text-4xl md:text-4xl text-2xl font-bold">{sermon.title}</h2>
 
                         {/* Sermon Description */}
                         <p className="text-sm text-[#383838de]">{sermon.description}</p>

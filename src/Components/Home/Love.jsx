@@ -13,7 +13,7 @@ function Love() {
 
             <h3 className='font-medium font-mono'>Love for the Church</h3>
 
-            <h2 className='font-bold text-4xl text-center'>LOVE AND COMPASSION</h2>
+            <h2 className='font-bold lg:text-4xl md:text-4xl text-2xl text-center'>LOVE AND COMPASSION</h2>
 
             <p className='text-sm lg:w-[50%] text-center my-[15px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor rerum et vero optio fugiat nisi, aperiam nesciunt modi dicta, tempore delectus cum reprehenderit ullam nam voluptatem temporibus deserunt asperiores.</p>
 
@@ -39,7 +39,7 @@ function Love() {
 
             <h2 className='font-medium font-mono'>OUR MISSION AND VISION</h2>
 
-            <h3 className='font-bold text-3xl text-center'>CELEBRATE WITH US</h3>
+            <h3 className='font-bold lg:text-3xl md:text-3xl text-2xl text-center'>CELEBRATE WITH US</h3>
 
             <p className='text-[13px] text-[#333] lg:w-[50%] text-center w-[100%]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis dignissimos recusandae voluptate nisi ad suscipit fuga, corrupti, reiciendis modi cum deleniti, sint atque nam cupiditate facere pariatur voluptatibus. Aliquam.</p>
 

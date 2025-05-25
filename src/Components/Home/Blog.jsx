@@ -7,7 +7,7 @@ function Blog() {
 
         <h3 className="font-medium font-mono">READ OUR BLOG</h3>
 
-        <h2 className="font-bold text-4xl text-center">SHARE, INSPIRE, INNOVATE</h2>
+        <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl text-center">SHARE, INSPIRE, INNOVATE</h2>
         
         
         {/* Blog Cards */}
