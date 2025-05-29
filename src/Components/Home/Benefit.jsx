@@ -12,9 +12,8 @@ function Benefit() {
     <section className="my-[30px] p-[90px] bg-[#F5F5F5] flex flex-col gap-5 items-center justify-center w-full min-w-full max-w-full">
 
 
-        <h3 className="font-medium font-mono">WATCH AND LISTEN</h3>
-
-        <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl text-center lg:w-[35%] md:w-[50%] w-[100%]">THE BENEFITS OF JOINING OUR CHURCH</h2>
+        <h3 className="font-semibold font-mono uppercase tracking-widest text-base w-full min-w-full max-w-full text-center">WATCH AND LISTEN</h3>
+        <h2 className="font-bold lg:text-4xl md:text-3xl text-[20px] lg:text-center md:text-center lg:w-[35%] md:w-[50%] font-sans tracking-tight leading-snug w-full min-w-full max-w-full text-center">THE BENEFITS OF JOINING OUR CHURCH</h2>
 
         {/* Cards */}
         <div className="flex flex-col lg:flex-row gap-[30px] items-center justify-center mt-[30px]">
@@ -23,8 +22,8 @@ function Benefit() {
           <div className="w-[300px] relative hover:opacity-90 transition-all duration-300 hover:scale-[1.1] hover:shadow-lg hover:bg-black group" id="card1">
 
             <div className="text-center absolute bottom-[30px] text-white">
-              <h2 className="font-bold text-2xl text-center">1. SPIRITUAL GROWTH</h2>
-              <p className="text-[14px] lg:hidden group-hover:block" id="card1Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula facilisis lacinia.</p>
+              <h2 className="font-bold text-2xl text-center font-sans tracking-tight">1. SPIRITUAL GROWTH</h2>
+              <p className="text-[14px] font-normal leading-relaxed lg:hidden group-hover:block" id="card1Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
             </div>
             <img src={RomanSister} alt="A Picture of a Roman Sister" srcset="" />
 
@@ -34,8 +33,8 @@ function Benefit() {
           <div className="w-[300px] relative hover:opacity-90 transition-all duration-300 hover:scale-[1.1] hover:shadow-lg hover:bg-black group" id="card2">
 
             <div className="text-center absolute bottom-[30px] text-white">
-              <h2 className="font-bold text-2xl text-center">2. COMMUNITY</h2>
-              <p className="text-[14px] lg:hidden group-hover:block" id="card2Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula facilisis lacinia.</p>
+              <h2 className="font-bold text-2xl text-center font-sans tracking-tight">2. COMMUNITY</h2>
+              <p className="text-[14px] font-normal leading-relaxed lg:hidden group-hover:block" id="card2Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula facilisis lacinia.</p>
             </div>
             <img src={Bible} alt="A Picture of a Bible" srcset="" />
 
@@ -45,8 +44,8 @@ function Benefit() {
           <div className="w-[300px] relative hover:opacity-90 transition-all duration-300 hover:scale-[1.1] hover:shadow-lg hover:bg-black group" id="card3">
 
             <div className="text-center absolute bottom-[30px] text-white">
-              <h2 className="font-bold text-2xl text-center">3. FELLOWSHIP</h2>
-              <p className="text-[14px] lg:hidden group-hover:block" id="card3Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula facilisis lacinia.</p>
+              <h2 className="font-bold text-2xl text-center font-sans tracking-tight">3. FELLOWSHIP</h2>
+              <p className="text-[14px] font-normal leading-relaxed lg:hidden group-hover:block" id="card3Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula facilisis lacinia.</p>
             </div>
             <img src={Pastor} alt="A Picture of a Pastor" srcset="" />
 

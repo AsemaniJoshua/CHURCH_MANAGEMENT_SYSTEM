@@ -7,9 +7,8 @@ function ChurchSermons() {
     return (
         <section className="my-[40px] flex flex-col items-center justify-center p-[50px] gap-[20px] w-full min-w-full max-w-full">
 
-            <h3 className="font-medium font-mono">SERMONS</h3>
-
-            <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl text-center lg:w-[40%]">JOIN US AND BECOME PART OF SOMETHING GREAT</h2>
+            <h3 className="font-semibold font-mono uppercase tracking-widest text-base">SERMONS</h3>
+<h2 className="font-bold lg:text-4xl md:text-3xl text-2xl text-center lg:w-[40%] font-sans tracking-tight leading-snug">JOIN US AND BECOME PART OF SOMETHING GREAT</h2>
 
             {/* Available sermons from the json file */}
                 {Sermons.map((sermon) => (
@@ -21,7 +20,7 @@ function ChurchSermons() {
 
                         {/* Event Type and Date */}
                         <div className="lg:flex lg:flex-row lg:justify-between lg:items-end md:flex md:flex-row md:justify-between md:items-end flex flex-row justify-between items-end">
-                            <h3 className="bg-gradient-to-r from-[#A54E2B] to-[#DC9853] text-transparent bg-clip-text">{sermon.category}</h3>
+                            <h3 className="bg-gradient-to-r from-[#A54E2B] to-[#DC9853] text-transparent bg-clip-text font-semibold uppercase tracking-wide text-sm">{sermon.category}</h3>
 
                             <div className="flex flex-col">
                                 <h2 className="font-bold text-4xl">{sermon.date.day}</h2>
@@ -30,10 +29,10 @@ function ChurchSermons() {
                         </div>
 
                         {/* Sermon Title */}
-                        <h2 className="lg:text-4xl md:text-4xl text-2xl font-bold">{sermon.title}</h2>
+                        <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold font-sans tracking-tight">{sermon.title}</h2>
 
                         {/* Sermon Description */}
-                        <p className="text-sm text-[#383838de]">{sermon.description}</p>
+                        <p className="text-sm md:text-base text-[#383838de] font-normal leading-relaxed">{sermon.description}</p>
 
                         {/* Days and time of event */}
                         <div className="flex flex-row gap-[10px]" >

@@ -8,7 +8,7 @@ function Contact() {
   return (
     <>
         <Navbar />
-        <ContactHero />
+        {/* <ContactHero /> */}
         <ContactForm />
         <Footer />
     </>

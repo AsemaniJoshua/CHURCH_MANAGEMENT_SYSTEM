@@ -11,11 +11,10 @@ function Love() {
         {/* text div */}
         <div className='flex flex-col gap-[15px] p-[10px] justify-center items-center'>
 
-            <h3 className='font-medium font-mono'>Love for the Church</h3>
+            <h3 className='font-semibold font-mono uppercase tracking-widest text-base'>Love for the Church</h3>
+            <h2 className='font-bold lg:text-4xl md:text-3xl text-2xl text-center font-sans tracking-tight leading-snug'>LOVE AND COMPASSION</h2>
 
-            <h2 className='font-bold lg:text-4xl md:text-4xl text-2xl text-center'>LOVE AND COMPASSION</h2>
-
-            <p className='text-sm lg:w-[50%] text-center my-[15px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor rerum et vero optio fugiat nisi, aperiam nesciunt modi dicta, tempore delectus cum reprehenderit ullam nam voluptatem temporibus deserunt asperiores.</p>
+            <p className='text-sm md:text-base font-normal leading-relaxed lg:w-[50%] text-center my-[15px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor rerum et vero optio fugiat nisi, aperiam nesciunt modi dicta, tempore delectus cum reprehenderit ullam nam voluptatem temporibus deserunt asperiores.</p>
 
             <a href="/about" className='no-underline'>
             <button className='bg-[#FFD2A4] text-black font-medium py-2 px-4 rounded-md cursor-pointer hover:cursor-pointer hover:text-2xl'>Read More</button>
@@ -37,11 +36,10 @@ function Love() {
         {/* Our Mission and Vision */}
         <div className='flex flex-col gap-[15px] p-[10px] justify-center items-center relative lg:top-[-120px] md:mt-[40px] mt-[40px]'>
 
-            <h2 className='font-medium font-mono'>OUR MISSION AND VISION</h2>
+            <h2 className='font-medium font-mono uppercase tracking-widest text-base'>OUR MISSION AND VISION</h2>
+            <h3 className='font-bold lg:text-3xl md:text-2xl text-xl text-center font-sans tracking-tight leading-snug'>CELEBRATE WITH US</h3>
 
-            <h3 className='font-bold lg:text-3xl md:text-3xl text-2xl text-center'>CELEBRATE WITH US</h3>
-
-            <p className='text-[13px] text-[#333] lg:w-[50%] text-center w-[100%]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis dignissimos recusandae voluptate nisi ad suscipit fuga, corrupti, reiciendis modi cum deleniti, sint atque nam cupiditate facere pariatur voluptatibus. Aliquam.</p>
+            <p className='text-[13px] md:text-base text-[#333] lg:w-[50%] text-center w-[100%] leading-relaxed'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis dignissimos recusandae voluptate nisi ad suscipit fuga, corrupti, reiciendis modi cum deleniti, sint atque nam cupiditate facere pariatur voluptatibus. Aliquam.</p>
 
             <a href="/about" className='no-underline cursor-pointer hover:text-2xl'>Read More <MdArrowRightAlt className='inline-block text-2xl'/></a>
         </div>

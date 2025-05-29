@@ -10,10 +10,10 @@ function Serve() {
       <div className="flex flex-col md:flex-row bg-white border-b-8 border-[#FFD2A4] p-4 md:p-8 lg:p-10 gap-6 md:gap-10 lg:gap-12 w-full max-w-[95vw] md:max-w-[900px] lg:max-w-[1100px] mx-auto shadow-lg rounded-lg">
         {/* div text */}
         <div className="flex flex-col justify-center items-start order-2 md:order-1 gap-4 w-full md:w-1/2">
-          <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">
+          <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl font-sans tracking-tight leading-snug">
             WE WANT TO SERVE THE WORLD AROUND US
           </h2>
-          <p className="text-sm text-[#3b3939c7]">
+          <p className="text-sm md:text-base font-normal leading-relaxed text-[#3b3939c7]">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
             excepturi hic, repellat corrupti voluptatem omnis.
           </p>

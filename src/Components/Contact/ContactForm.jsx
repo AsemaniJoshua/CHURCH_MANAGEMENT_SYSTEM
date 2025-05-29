@@ -1,166 +1,250 @@
-import { useState } from "react";
-import { Button, Label, TextInput, Textarea } from "flowbite-react";
-import { CiFacebook } from "react-icons/ci";
-import { CiTwitter } from "react-icons/ci";
-import { CiInstagram } from "react-icons/ci";
-import { CiLinkedin } from "react-icons/ci";
+import React, { useState } from "react";
+import AnimatedSection from "../AnimatedSection";
 
-function ContactForm() {
-  const [FullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setIsLoading(true);
-    // Handle form submission logic here
-    console.log("Form submitted");
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here
+    alert("Thank you for your message! We'll get back to you soon.");
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    });
   };
 
   return (
-    // Contact form and Address section
-    <section className="flex flex-col lg:flex-row gap-[50px] lg:items-center lg:justify-center w-full min-w-full max-w-full lg:p-[50px]">
+    <div className="min-h-screen bg-[#FFF5EB] font-sans text-[#161722]">
+      {/* Hero Section */}
+      <section className="relative bg-[#FFD0A0] text-[#161722] py-16 md:py-24">
+        <div className="container mx-auto px-4 relative z-10">
+          <AnimatedSection animation="fade-in">
+            <div className="text-center max-w-3xl mx-auto">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 tracking-tight">Contact Us</h1>
+              <p className="text-sm md:text-base lg:text-lg text-[#161722] opacity-80">
+                We'd love to hear from you. Get in touch with our church family.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Contact Information */}
+      <section className="py-12 bg-[#FFF5EB]">
+        <div className="container mx-auto px-4">
+          <AnimatedSection animation="fade-in">
+            <div className="text-center mb-10">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#161722] mb-2 tracking-tight">Get In Touch</h2>
+              <p className="text-sm md:text-base text-[#161722] opacity-70">Multiple ways to connect with us</p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <AnimatedSection animation="scale-in" delay={100}>
+              <div className="bg-[#FFF5EB] border-b-8 border-[#FFD2A4] p-8 rounded-2xl text-center shadow hover:shadow-lg transition-all duration-300">
+                <div className="w-14 h-14 bg-[#FFD2A4] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">📍</span>
+                </div>
+                <h3 className="text-base md:text-lg font-bold text-[#161722] mb-2">Visit Us</h3>
+                <p className="text-xs md:text-sm text-[#161722] opacity-70 mb-4">Come worship with us</p>
+                <div className="space-y-1">
+                  <p className="font-semibold text-[#161722]">123 Church Street</p>
+                  <p className="text-[#161722] opacity-70">Accra, Ghana</p>
+                  <p className="text-sm text-[#FFD0A0] mt-2 font-semibold">Sunday Service: 9:00 AM</p>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection animation="scale-in" delay={200}>
+              <div className="bg-[#FFF5EB] border-b-8 border-[#FFD2A4] p-8 rounded-2xl text-center shadow hover:shadow-lg transition-all duration-300">
+                <div className="w-14 h-14 bg-[#FFD2A4] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">📞</span>
+                </div>
+                <h3 className="text-base md:text-lg font-bold text-[#161722] mb-2">Call Us</h3>
+                <p className="text-xs md:text-sm text-[#161722] opacity-70 mb-4">Speak with our team</p>
+                <div className="space-y-1">
+                  <p className="font-semibold text-[#161722]">+233 24 123 4567</p>
+                  <p className="text-[#161722] opacity-70">Main Office</p>
+                  <p className="text-sm text-[#FFD0A0] mt-2 font-semibold">Mon-Fri: 9:00 AM - 5:00 PM</p>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection animation="scale-in" delay={300}>
+              <div className="bg-[#FFF5EB] border-b-8 border-[#FFD2A4] p-8 rounded-2xl text-center shadow hover:shadow-lg transition-all duration-300">
+                <div className="w-14 h-14 bg-[#FFD2A4] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">✉️</span>
+                </div>
+                <h3 className="text-base md:text-lg font-bold text-[#161722] mb-2">Email Us</h3>
+                <p className="text-xs md:text-sm text-[#161722] opacity-70 mb-4">Send us a message</p>
+                <div className="space-y-1">
+                  <p className="font-semibold text-[#161722]">info@gracechapel.gh</p>
+                  <p className="text-[#161722] opacity-70">General Inquiries</p>
+                  <p className="text-sm text-[#FFD0A0] mt-2 font-semibold">We respond within 24 hours</p>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Form */}
-      <div className="flex flex-col p-[20px] gap-[20px]">
-        <h2 className="font-medium text-xl text-[#161722]">CONTACT US:</h2>
+      <section className="py-12 bg-[#FFD0A0]/20">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <AnimatedSection animation="slide-in-left">
+              <div>
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#161722] mb-4 tracking-tight">Send Us a Message</h2>
+                <p className="text-sm md:text-base lg:text-lg text-[#161722] opacity-70 mb-8">
+                  Have a question, prayer request, or want to learn more about our church? Fill out the form and we'll get back to you as soon as possible.
+                </p>
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-[#FFD2A4] rounded-full flex items-center justify-center">
+                      <span className="text-xl">⏰</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-sm md:text-base text-[#161722]">Quick Response</h4>
+                      <p className="text-xs md:text-sm text-[#161722] opacity-70">We typically respond within 24 hours</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-[#FFD2A4] rounded-full flex items-center justify-center">
+                      <span className="text-xl">🤝</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-sm md:text-base text-[#161722]">Personal Touch</h4>
+                      <p className="text-xs md:text-sm text-[#161722] opacity-70">Every message receives personal attention from our team</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-[#FFD2A4] rounded-full flex items-center justify-center">
+                      <span className="text-xl">🙏</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-sm md:text-base text-[#161722]">Prayer Support</h4>
+                      <p className="text-xs md:text-sm text-[#161722] opacity-70">All prayer requests are handled with care and confidentiality</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
 
-        <form
-          className="flex max-w-md flex-col gap-[30px] bg-[#FFF5EB] p-8 lg:p-10 lg:w-[500px] rounded-lg shadow-lg text-[#161722]"
-          onSubmit={handleSubmit}
-        >
-          <div>
-            <div className="mb-2 block">
-              <Label htmlFor="name2" className="text-[#161722]" color="#161722">
-                Full Name
-              </Label>
-            </div>
-            <TextInput
-              id="name2"
-              type="text"
-              placeholder="Your Full Name"
-              color="#161722"
-              required
-              shadow
-              value={FullName}
-              onChange={(e) => setFullName(e.target.value)}
-              className="text-[#161722] text-xl"
-            />
-          </div>
-          <div>
-            <div className="mb-2 block">
-              <Label
-                htmlFor="email2"
-                className="text-[#161722]"
-                color="#161722"
-              >
-                Email
-              </Label>
-            </div>
-            <TextInput
-              id="email2"
-              type="email"
-              placeholder="joshua@gmail.com"
-              color="#161722"
-              required
-              shadow
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="text-[#161722] text-xl"
-            />
-          </div>
-          {/* <div>
-                      <div className="mb-2 block">
-                        <Label htmlFor="password2" className="text-[#161722]" color="#161722">Password</Label>
-                      </div>
-                      <TextInput
-                        id="password2"
-                        type="password"
+            <AnimatedSection animation="slide-in-right">
+              <div className="bg-[#FFF5EB] p-8 rounded-2xl shadow-lg border-b-8 border-[#FFD2A4]">
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="name" className="block text-xs md:text-sm font-semibold text-[#161722] mb-2">
+                        Full Name *
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
                         required
-                        shadow
-                        placeholder="••••••••"
-                        color="#161722"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        className="text-[#161722] text-xl"
+                        className="w-full px-4 py-3 border border-[#FFD2A4] rounded-lg focus:ring-2 focus:ring-[#FFD0A0] focus:border-transparent transition-colors bg-[#FFF5EB] text-[#161722]"
+                        placeholder="Your full name"
                       />
-                    </div> */}
-          {/* <div className="flex items-center gap-2">
-                      {/* <Checkbox
-                        id="agree"
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-xs md:text-sm font-semibold text-[#161722] mb-2">
+                        Email Address *
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         required
-                        color="#161722"
-                        className="text-[#161722]"
-                        checked={isChecked}
-                        onChange={(e) => setIsChecked(e.target.checked)}
-                      /> *
-                      <Label htmlFor="agree" className="flex text-[#161722]" color="#161722">
-                        {/* I agree with the&nbsp; * Forget Password?&nbsp;
-                        <a
-                          href="/"
-                          className="text-[#161722] underline font-medium"
-                        >
-                          Reset Password
-                        </a>
-                      </Label>
-                    </div> */}
-          <div className="max-w-md">
-            <div className="mb-2 block">
-              <Label htmlFor="comment" className="text-[#161722]"
-                color="#161722">Your message</Label>
-            </div>
-            <Textarea
-              id="comment"
-              placeholder="Leave a comment..."
-              required
-              rows={4}
-              className="text-[#161722] text-xl"
-              color="#161722"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
+                        className="w-full px-4 py-3 border border-[#FFD2A4] rounded-lg focus:ring-2 focus:ring-[#FFD0A0] focus:border-transparent transition-colors bg-[#FFF5EB] text-[#161722]"
+                        placeholder="your.email@example.com"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label htmlFor="phone" className="block text-xs md:text-sm font-semibold text-[#161722] mb-2">
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-[#FFD2A4] rounded-lg focus:ring-2 focus:ring-[#FFD0A0] focus:border-transparent transition-colors bg-[#FFF5EB] text-[#161722]"
+                      placeholder="+233 24 123 4567"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="subject" className="block text-xs md:text-sm font-semibold text-[#161722] mb-2">
+                      Subject *
+                    </label>
+                    <select
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-[#FFD2A4] rounded-lg focus:ring-2 focus:ring-[#FFD0A0] focus:border-transparent transition-colors bg-[#FFF5EB] text-[#161722]"
+                    >
+                      <option value="">Select a subject</option>
+                      <option value="general">General Inquiry</option>
+                      <option value="visit">Planning a Visit</option>
+                      <option value="membership">Membership Information</option>
+                      <option value="prayer">Prayer Request</option>
+                      <option value="ministry">Ministry Involvement</option>
+                      <option value="events">Events & Programs</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-xs md:text-sm font-semibold text-[#161722] mb-2">
+                      Message *
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      rows={6}
+                      className="w-full px-4 py-3 border border-[#FFD2A4] rounded-lg focus:ring-2 focus:ring-[#FFD0A0] focus:border-transparent transition-colors bg-[#FFF5EB] text-[#161722] resize-vertical"
+                      placeholder="Tell us how we can help you..."
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full bg-[#FFD0A0] text-[#161722] py-3 px-6 rounded-lg font-bold text-base md:text-lg hover:bg-[#FFD2A4] transition-all duration-300 transform hover:scale-105"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </AnimatedSection>
           </div>
-          <Button
-            type="submit"
-            disabled={isLoading}
-            className="bg-[#FFD0A0] text-[#161722] hover:bg-[#FFD2A4] focus:ring-2 focus:ring-[#FFD0A0] border-none hover:text-[17px] font-medium"
-            color="#FFD0A0"
-          >
-            {isLoading ? "Loading..." : "Send Message"}
-          </Button>
-        </form>
-      </div>
-
-      {/* Address Section */}
-      <div className="flex flex-col p-[30px] gap-[30px]">
-        
-        {/* Address */}
-        <div>
-            <h3 className="font-medium text-[#2c2c2ca2]">Address</h3>
-            <h4 className="font-bold text-xl text-[#161722]">123 Main Street, City, Country</h4>
         </div>
-
-        {/* Contact details */}
-        <div>
-            <h3 className="font-medium text-[#2c2c2ca2]">Contact Details</h3>
-            <p className="font-bold text-xl text-[#161722]">(+233) 25-758-1661</p>
-            <p className="font-bold text-xl text-[#161722]">NolexPrime@gmail.com</p>
-        </div>
-
-        {/* Social media links */}
-        <div>
-            <h3 className="font-medium text-[#2c2c2ca2]">Find us here</h3>
-            <div className="flex gap-5">
-                <a href="https://www.facebook.com" className="no-underline"><CiFacebook size={30} className="text-[#161722]" /></a>
-                <a href="http://www.twitter.com" className="no-underline"><CiTwitter size={30} className="text-[#161722]" /></a>
-                <a href="http://www.instagram.com" className="no-underline"><CiInstagram size={30} className="text-[#161722]" /></a>
-                <a href="http://www.linkedin.com" className="no-underline"><CiLinkedin size={30} className="text-[#161722]" /></a>
-            </div>
-       </div>
-
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
-
-export default ContactForm;
